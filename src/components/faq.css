@@ -1,0 +1,105 @@
+/* Typography */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800');
+
+/* Colors */
+:root {
+  --primary: #6372ff;
+  --white: #FFFFFF;
+  --light: #F4F4F4;
+  --black: #333333;
+  --grey: #C4C4C4;
+  --ghost: rgba(0, 0, 0, 0);
+}
+
+/* Transitions */
+:root {
+  --time: 200ms;
+  --ease: cubic-bezier(0.165, 0.84, 0.44, 1);
+  --smooth: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  --transition: var(--ease) var(--time);
+}
+
+
+button {
+  all: unset;
+}
+
+.section-title {
+  color: var(--primary);
+  font-size: 4rem;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 20px 0;
+}
+
+/* Media queries for .section-title */
+@media (max-width: 767px) {
+  .section-title {
+    font-size: 2.6rem;
+  }
+}
+
+/* Media queries for tablets and small laptops */
+@media (min-width: 768px) and (max-width: 1279px) {
+  /* Add your styles here */
+}
+
+/* Styles for #faq */
+#faq {
+  padding: 0 0 10rem;
+}
+
+#faq .accordion .card {
+  border: 0.1rem solid var(--grey);
+  border-radius: 0.4rem;
+  overflow: hidden;
+  margin: 0 0 1.5rem;
+}
+
+#faq .accordion .card .card-header {
+  border: none;
+  padding: 0;
+}
+
+#faq .accordion .card .card-header button {
+  background: var(--primary) url('http://icons.iconarchive.com/icons/icons8/ios7/512/User-Interface-Minus-icon.png') no-repeat 98.5% center / 30px;
+  color: var(--white);
+  font-size: 2rem;
+  width: 100%;
+  padding: 1rem 0;
+}
+
+#faq .accordion .card .card-header button span {
+  display: block;
+  margin: 0 4rem 0 1.5rem;
+}
+
+#faq .accordion .card .card-header button:focus {
+  box-shadow: none;
+  outline: none;
+}
+
+#faq .accordion .card .card-header button.collapsed {
+  background: var(--white) url('https://image.flaticon.com/icons/png/128/61/61112.png') no-repeat 98% center / 18px 18px;
+  color: var(--primary);
+}
+
+#faq .accordion .card .card-body {
+  font-size: 1.6rem;
+  font-weight: 400;
+  letter-spacing: 0.05rem;
+  line-height: 155%;
+}
+
+/* Styles for .support-text */
+#faq .support-text {
+  font-size: 1.6rem;
+  letter-spacing: 0.05rem;
+  margin: 0;
+}
+
+/* Media queries for specific screen sizes */
+@media (max-width: 767px) {
+  /* Add your styles here */
+}
